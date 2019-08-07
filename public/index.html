@@ -2,10 +2,21 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <!-- 引入icon图标 -->
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_518606_sbsqk1ewqy.css">
+    <link rel="stylesheet" href="./css/reset.css">
     <title>gshop-client</title>
+    <script src="https://as.alipayobjects.com/g/component/fastclick/1.0.6/fastclick.js"></script>
+    <script>
+      if ('addEventListener' in document) {
+        document.addEventListener('DOMContentLoaded', function() {
+          FastClick.attach(document.body);
+        }, false);
+      }
+    </script>
   </head>
   <body>
     <noscript>

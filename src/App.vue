@@ -1,28 +1,24 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    
+    <router-view></router-view>
+    <!--显示或者隐藏底部导航this.$route.meta.showFooter,showFooter是个布尔值，true代表显示，false代表隐藏，在路由（routes）里配置-->
+    <FooterGuide v-show="this.$route.meta.showFooter"/>
   </div>
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
+<script type="text/ecmascript-6">
+import FooterGuide from './components/FooterGuide/FooterGuide'
 
-export default {
-  name: 'app',
-  components: {
-    HelloWorld
+  export default {
+    components: {
+      FooterGuide,
+      
+    }
   }
-}
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="stylus" rel="stylesheet/stylus" scoped>
+
+ 
 </style>
